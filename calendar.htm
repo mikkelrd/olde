@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Home Frame</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+body {
+	background-color: #660000;
+	margin-right:3cm;
+        margin-left:1px;
+	SCROLLBAR-FACE-COLOR: #CC6600; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #CC6600; 
+	SCROLLBAR-SHADOW-COLOR: #660033; 
+	SCROLLBAR-3DLIGHT-COLOR: #FF9966; 
+	SCROLLBAR-ARROW-COLOR:  #FF6600; 
+	SCROLLBAR-TRACK-COLOR: #CC9900; 
+	SCROLLBAR-DARKSHADOW-COLOR: #660033;
+}
+body,td,th {
+	color: #CC6600;
+	font-family: Helvetica, Arial Narrow;
+	font-size: 1em;
+	font-weight: bold;
+}
+a:link {
+	color: #CC6600;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #003300;
+}
+a:hover {
+	text-decoration: underline;
+	color: #FF6600;
+}
+a:active {
+	text-decoration: none;
+	color: #006600;
+}
+
+.main {
+width:130px;
+height:190px;
+border:1px solid #000000;
+}
+
+.month {
+background-color:black;
+font:bold 12px verdana;
+color:#FFFFFF;
+}
+
+.daysofweek {
+background-color:#666666;
+font:bold 12px verdana;
+color:#FFFFFF;
+}
+
+.days {
+font-size: 12px;
+font-family:verdana;
+color:#003300;
+background-color: #CC6600;
+padding: 2px;
+}
+
+.days #today{
+font-weight: bold;
+color: #0000FF;
+}
+
+
+
+-->
+</style>
+
+<script type="text/javascript" src="basiccalendar.js">
+
+/***********************************************
+* Basic Calendar-By Brian Gosselin at http://scriptasylum.com/bgaudiodr/
+* Script featured on Dynamic Drive (http://www.dynamicdrive.com)
+* This notice must stay intact for use
+* Visit http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script> 
+
+
+</head>
+
+<body style="background-image:url(images/mtbackgr.jpg);background-position:right;background-repeat:repeat-y;background-attachment:fixed;">
+
+<table width="550" >
+<tr>
+  <td style="font-family:verdana;font-size:22pt;color:#CC6600;font-weight:100;">
+  Basic Calendar <br />
+  </td>
+</tr>
+<tr>
+  <td style="font-family:verdana;font-size:10pt;color:#CC6600;font-weight:100;">
+  (Subject to <em>Much</em> Change..)
+  </td>
+</tr>
+<tr>
+  <td>
+
+<br />
+
+<script type="text/javascript">
+
+var todaydate=new Date()
+var curmonth=todaydate.getMonth()+1 //get current month (1-12)
+var curyear=todaydate.getFullYear() //get current year
+
+</script>
+
+<table border="0" cellspacing="0" cellpadding="2">
+<tr>
+<td width="33%">
+<script>
+document.write(buildCal(curmonth-1 ,curyear, "main", "month", "daysofweek", "days", 0));
+</script></td>
+<td width="33%">
+<script>
+document.write(buildCal(curmonth ,curyear, "main", "month", "daysofweek", "days", 0));
+</script></td>
+<td width="34%">
+<script>
+document.write(buildCal(curmonth-11 ,curyear+1, "main", "month", "daysofweek", "days", 0));
+</script></td>
+</tr>
+</table> 
+
+<br />
+
+  </td>
+</tr>
+
+<tr>
+
+  <td>
+    <ul type="square" >
+
+      <li> 12/9 - TRAINING: Man Tracking
+      <br />
+      <br />
+      </li>
+
+      <li> 12/12 - Set Up for SAREX on 13th. Staging place and time to be determined on 12/9
+      <br />
+      <br />
+      </li>
+
+      <li> 12/13 - HUGE SAREX. 5 counties' SAR agencies hosted by Sac County. Coast Guard, FBI, Air National Gaurd, and Red Cross all observing & Army (w/ Black Hawk recently returned from Afghanistan) and Sac Fire Dept. w/ their chopper to demonstrate helo-safety. Scenario to be announced at 12/9 Tuesday Mtg.
+      <br />
+      <br />
+      </li>
+
+      <li> 1/13 - TRAINING: Wilderness Survival
+      <br />
+      <br />
+      </li>
+
+      <li> 3/9 - TRAINING: Map & Compass Orienteering
+      <br />
+      <br />
+      </li>
+
+  </td>
+</tr>
+
+<tr>
+
+  <td>
+  ..Stay Tuned!!..
+  </td>
+<tr>
+
+</table>
+
+<br />
+
+<center>
+<a href="sarmain.htm" title="home" target="mainFrame">HOME</a> ||
+<a href="members.htm" title="dir" target="mainFrame">MEMBERS</a> ||
+<a href="calendar.htm" title="cal" target="mainFrame">CALENDAR</a> ||
+<a href="info.htm" title="info" target="mainFrame">SITE INFO</a>
+</center>
+
+</body>
+
+</html>
